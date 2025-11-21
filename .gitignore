@@ -28,7 +28,10 @@ xcuserdata/
 .swiftpm/
 Package.resolved
 Packages/
+
+# Ignore auto-generated xcodeproj but keep Demo
 *.xcodeproj
+!Demo/**/*.xcodeproj
 
 # CocoaPods
 Pods/
