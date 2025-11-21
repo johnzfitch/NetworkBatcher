@@ -136,11 +136,19 @@ public struct BatcherConfiguration: Sendable {
 
         // Analytics platforms
         "api.amplitude.com",
+        "api2.amplitude.com",
+        "api.lab.amplitude.com",
+        "flag.lab.amplitude.com",
         "api.mixpanel.com",
         "api.segment.io",
         "cdn.segment.com",
         "api.heap.io",
         "heapanalytics.com",
+
+        // Session Replay (very deferrable)
+        "r.lr-intake.com",
+        "api.logrocket.com",
+        "api.fullstory.com",
 
         // Crash reporting
         "sentry.io",
@@ -167,13 +175,19 @@ public struct BatcherConfiguration: Sendable {
         "pagead2.googlesyndication.com",
         "adsserver.com",
 
-        // Other telemetry
+        // Push notification services (registration is deferrable)
         "api.onesignal.com",
         "api.intercom.io",
         "api.braze.com",
         "sdk.iad-01.braze.com",
         "api.instabug.com",
         "logs.newrelic.com",
+
+        // Expo OTA updates (deferrable)
+        "u.expo.dev",
+
+        // Network connectivity checks
+        "clients3.google.com",
     ]
 
     // MARK: - Presets
